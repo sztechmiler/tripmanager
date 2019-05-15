@@ -21,4 +21,18 @@ public class TripTest {
 		assertEquals(photo, trip.getPhotos().get(0));
 	}
 
+	@Test
+	public void testSetName() {
+		Trip trip = new Trip("nazwa", "opis");
+		trip.setName("czekolada");
+		assertEquals("czekolada", trip.getName());
+	}
+
+	@Test
+	public void testSetDescription() {
+		Trip trip = new Trip("nazwa", "opis");
+		trip.setName("czekolada");
+		assertEquals("czekolada", trip.getName());
+	}
+
 }

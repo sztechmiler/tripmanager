@@ -16,5 +16,11 @@ public class PhotoTest {
 		Photo photo = new Photo("SomeNewComment");
 		assertEquals("SomeNewComment", photo.getComment());
 	}
+	@Test
+	public void testSetWithComment() {
+		Photo photo = new Photo("SomeNewComment");
+		photo.setComment("NewComment");
+		assertEquals("NewComment", photo.getComment());
+	}
 
 }
