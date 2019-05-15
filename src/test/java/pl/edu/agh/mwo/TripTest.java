@@ -31,8 +31,8 @@ public class TripTest {
 	@Test
 	public void testSetDescription() {
 		Trip trip = new Trip("nazwa", "opis");
-		trip.setName("czekolada");
-		assertEquals("czekolada", trip.getName());
+		trip.setDescription("czekolada");
+		assertEquals("czekolada", trip.getDescription());
 	}
 
 }
